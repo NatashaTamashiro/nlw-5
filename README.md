@@ -1,6 +1,10 @@
 # NLW_#1
 ## [Rocketseat](https://rocketseat.com.br/) - Next Level Week - Starter
 
+# Para rodar o projeto
+* npm start
+* entrar no [link](http://localhost:3000/) http://localhost:3000/
+
 ## Banco de dados
   * Dados não devem ficar na aplicação ( porque? )
     - Podemos PERDER/CORROMPER a aplicação/dados, então devemos armazenar no banco
