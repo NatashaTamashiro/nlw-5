@@ -1,0 +1,88 @@
+body{
+    background-color: white;
+}
+
+body::after{
+    content: "";
+    position: absolute;
+    background-color: #f0f0f5;
+    top: 0px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 16rem;
+    z-index: -1;                            /* Propriedade do eixo da profundidade*/
+}
+
+#page-search-results{
+    width: 90%;                             /* Para limitar o tamanho da caixa na página*/
+    max-width: 1100px;                      /* Definindo largura máxima, quando chegar em 1100px, ele para de ajustar a página */
+    margin: 0 auto;                         /* Alinhar igualmente nas laterais */
+}
+
+#page-search-results header {
+    display: flex;                          /* Para deixar o conteúdo um do lado do outro */
+    justify-content: space-between;         /* Dar um espaço entre eles */
+    align-items: center;                    /* Centralizar o conteúdo */
+    margin-top: 48px;                       /* Dar um espaçamento em cima do conteúdo */
+}
+
+#page-search-results header a{
+    color: var(--tittle-color);             /* Cor vindo do root (main.css) */
+    font-weight: bold;                      /* Peso/Grossura da fonte*/
+    display: flex;                          /* Para que a seta do icone fique ao lado do link */
+    align-items: center;                    /* Alinhar o ícone com o link */
+}
+
+#page-search-results header a span{
+    background-image: url('../assets/arrow-left.svg');
+    width: 20px;                            /* Definir o tamanho do ícone para ele aparecer */
+    height: 20px;
+    display: flex;
+    margin-right: 15px;                     /* Distancia o ícone */
+}
+
+main{
+    margin: 48px;
+}
+
+main h4{
+    font-weight: normal;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 32px;
+}
+
+main .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+main .card img{
+    width: 100%;
+    height: 150px;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;                        /* Vai preencher o espaço com a imagem em vez de esticar */
+}
+
+main .card h1{
+    margin: 32px 0;
+    font-size: 36px;
+    line-height: 41px;
+    color: #322153;
+}
+
+main .card h3{
+    margin: 24px 0;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--primary-color);
+}
+
+main .card p{
+    font-size: 16px;
+    line-height: 26px;
+}
+
